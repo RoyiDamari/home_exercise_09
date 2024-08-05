@@ -55,7 +55,7 @@ fruits_list: list[str] = ["Apple", "Banana", "Orange", "Mango", "Strawberry",
                           "Pineapple", "Grapes", "Watermelon"];
 print(list(map(lambda fruit: fruit[::-1], fruits_list)));
 print(list(map(lambda fruit: fruit[0], fruits_list)));
-print(list(map(lambda fruit: fruit.capitalize(), fruits_list)));
+print(list(map(lambda fruit: fruit.upper(), fruits_list)));
 print(list(map(lambda fruit: len(fruit), fruits_list)));
 print(list(map(lambda fruit: fruit + "!" if fruit.endswith('s') else fruit, fruits_list)));
 
